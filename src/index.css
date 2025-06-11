@@ -16,3 +16,7 @@ h1 {
 .default-button {
   @apply bg-white text-black border border-red-600 p-2 rounded w-max;
 }
+
+input {
+  @apply bg-white text-black p-2 rounded-lg font-semibold outline-blue-800 border border-blue-800;
+}

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import useCounter from "../composables/useCounter";
 
-export default function UseStateHook() {
+function UseStateHook() {
   let nonSateCount = 0;
   const [stateCount, setStateCount] = useState(0);
 
@@ -67,3 +67,5 @@ export default function UseStateHook() {
     </>
   );
 }
+
+export default UseStateHook;

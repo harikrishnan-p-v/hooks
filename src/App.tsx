@@ -1,11 +1,6 @@
-import Index from "./pages/Index";
+import { RouterProvider } from "react-router";
+import routes from "./router/routes";
 
 export default function App() {
-  return (
-    <>
-      <div className="mt-10">
-        <Index />
-      </div>
-    </>
-  );
+  return <RouterProvider router={routes} />;
 }

@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import useAutoIncreaseCounter from "../composables/useAutoIncreaseCounter";
 
-export default function UseEffectHook() {
+function UseEffectHook() {
   const [showCounter, setShowCounter] = useState(false);
 
-  // Empty array to execute it only once
+  // Empty array to execute it only once when the component mount
   useEffect(() => {
     setTimeout(() => {
       setShowCounter(true);
@@ -26,3 +26,5 @@ export default function UseEffectHook() {
     </>
   );
 }
+
+export default UseEffectHook;
