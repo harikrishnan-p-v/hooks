@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+body {
+  background-color: black;
+  color: white;
+}
+
+h1 {
+  @apply text-3xl font-extrabold text-center;
+}
+
+.default-box {
+  @apply flex flex-col gap-5 p-5 border border-white my-10 mx-auto w-max rounded-xl items-center;
+}
+
+.default-button {
+  @apply bg-white text-black border border-red-600 p-2 rounded w-max;
+}
